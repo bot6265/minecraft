@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page -- minecraft</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .nav-links {
+            margin-top: 1rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .download-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px;
+            width: 90%;
+        }
+
+        .icon {
+            margin-bottom: 1rem;
+        }
+
+        .icon img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 24px;
+        }
+
+        .header-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .scroll-notice {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 1rem 0;
+            font-size: 14px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .preview-images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .preview-image-container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .preview-image {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 2px solid #eee;
+        }
+
+        .image-description {
+            margin-top: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .features {
+            text-align: left;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .features h2 {
+            font-size: 20px;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .features ul {
+            list-style-position: inside;
+            color: #666;
+        }
+
+        .features li {
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .download-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+
+        .file-info {
+            margin-top: 1.5rem;
+            font-size: 14px;
+            color: #888;
+            line-height: 1.6;
+        }
+
+        .additional-info {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: #fff8e1;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .additional-info h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 20px;
+        }
+
+        .additional-info p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Download Minecraft</h1>
+    </header>
+
+    <main>
+        <div class="download-card">
+            <div class="icon"><img src="https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png"></div>
+            <h1>minecraft</h1>
+            <p class="description">
+                Dive into an open world of building, crafting and survival. Gather resources, survive the night, and build whatever you can imagine one block at a time in the ultimate simulation game. Adventure through completely open worlds where you can play MMO games with friends, build a city, start a farm, mine deep into the ground, face mysterious enemies, or just experiment to the limits of your imagination!
+            </p>
+
+            <div class="scroll-notice">
+                👇 Scroll down to view more details and find the download button at the bottom! 👇
+            </div>
+
+            <div class="preview-images">
+                <div class="preview-image-container">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a" alt="Professional Templates Preview" class="preview-image">
+                    <p class="image-description">
+                        The possibilities are endless. Embark on an epic adventure and play with friends, building from the ground up. Become the best builder and expand in Creative mode, where you can craft from unlimited resources. Survive the night, face intense battles, craft tools, and fend off danger in Survival mode.
+                    </p>
+                </div>
+                <div class="preview-image-container">
+                    <img src="https://m.media-amazon.com/images/I/B10PCN5SkSL.png" alt="User Guide Preview" class="preview-image">
+                    <p class="image-description">
+                        With seamless cross-platform and MMO gameplay on Minecraft: Bedrock Edition, you can adventure solo or with friends, and discover an infinite, randomly generated world filled with blocks to mine, biomes to explore, and mobs to befriend (or battle)!.
+                    </p>
+                </div>
+                <div class="preview-image-container">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/software/switch/70010000000964/f38453ba284ae7079907906edd934132cfb9551cd4de07928a025538d27c91ed" alt="Resource Collection Preview" class="preview-image">
+                    <p class="image-description">
+                        Features: • Craft from special resources and tools to create brand new structures and landscapes
+                    </p>
+                </div>
+                <div class="preview-image-container">
+                    <img src="https://play-lh.googleusercontent.com/P1EqioQFE6PFmNYOgF00JuP-pIZZtZme2Hq7O9ijkiN3uLutcoxksBzA-fQQvzPFAw=w526-h296-rw" alt="Advanced Features Preview" class="preview-image">
+                    <p class="image-description">
+                        • Adventure through an endless open world full of different biomes and creatures                    </p>
+                </div>
+                <div class="preview-image-container">
+                    <img src="https://play-lh.googleusercontent.com/JrcJTqmjoSOVqG9oDn_pNlh_UKRenIZIea9s8IK7z7jN0L4eyoGctpxODMGs2Cj0wg=w526-h296-rw" alt="Analytics Dashboard Preview" class="preview-image">
+                    <p class="image-description">
+                        • Minecraft Marketplace – Get creator-made add-ons, thrilling worlds, and stylish cosmetics on Minecraft Marketplace                    </p>
+                </div>
+                <div class="preview-image-container">
+                    <img src="https://play-lh.googleusercontent.com/mobmJq-BZOWq4H3Bk0iHsD9SqUPz-HRgXAtBdLJfpJC6VRadzTvpXkvXppJo5O3XzA=w526-h296-rw" alt="Collaboration Tools Preview" class="preview-image">
+                    <p class="image-description">
+                        • Connect with millions of players on community servers, or subscribe to Realms Plus to cross-play with up to 10 friends on your own private server                     </p>
+                </div>
+            </div>
+
+            <div class="features">
+                <h2>Package Contents:</h2>
+                <ul>
+                    <li>• Slash commands – Tweak how the game plays: you can change the weather, summon mobs, change the time of day, and more • Add-ons – Customize your experience even further with add-ons! If you're more tech-inclined, you can modify your game to create new resource packs</li>
+                </ul>
+            </div>
+
+            <div class="additional-info">
+                <h2>Why Choose Our Premium Package?</h2>
+                <p>
+                    Our Premium Document Package stands out for its comprehensive approach to professional documentation. Whether you're a seasoned professional or just starting your journey, this package provides everything you need to create impressive, effective documents.
+                </p>
+                <p>
+                    Each component has been carefully crafted and reviewed by industry experts to ensure the highest quality and practical utility. Regular updates keep the content fresh and relevant to current industry standards.
+                </p>
+                <p>
+                    With over 10,000 satisfied users worldwide, our package has proven its value across various industries and use cases. The included templates and guides have helped professionals save countless hours while producing superior results.
+                </p>
+            </div>
+
+            <a href="https://mcpedl.org/uploads_files/11-12-2024/minecraft-1-21-51.apk" class="download-btn">Download Now</a>
+            <p class="file-info">
+                File size: 231MB
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Download Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
